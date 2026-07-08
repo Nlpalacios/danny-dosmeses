@@ -1,0 +1,25 @@
+body{
+    margin:0;
+    background:#3310b1;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: "Poppins", sans-serif;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+#content{
+    color:white;
+    text-align:center;
+    font-size:2rem;
+    padding:20px;
+}
+
+img{
+    max-width:80vw;
+    max-height:80vh;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
