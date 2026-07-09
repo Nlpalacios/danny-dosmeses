@@ -1,16 +1,13 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html,
-body{
-    min-height:100vh;
+html{
+    height:100%;
+    overflow-x:hidden;
+    background:#1d3bb1; /* fallback so any gap matches the gradient, not white */
 }
 
 body{
     position:relative;
+    min-height:100vh;
+    overflow-x:hidden;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -19,7 +16,6 @@ body{
     cursor:pointer;
 }
 
-/* background lives on a fixed layer, independent of body height */
 body::before{
     content:"";
     position:fixed;
