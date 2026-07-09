@@ -1,13 +1,13 @@
-html{
+html,
+body{
     height:100%;
-    overflow-x:hidden;
-    background:#1d3bb1; /* fallback so any gap matches the gradient, not white */
+    height:100dvh; /* overrides for browsers that support it, Safari included */
+    overflow:hidden;
+    overscroll-behavior:none;
 }
 
 body{
     position:relative;
-    min-height:100vh;
-    overflow-x:hidden;
     display:flex;
     justify-content:center;
     align-items:center;
