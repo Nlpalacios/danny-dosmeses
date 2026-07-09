@@ -47,18 +47,11 @@ body {
     animation:fade .35s ease;
 }
 
-#content img{
-    width:100%;
-    max-width:700px;
-    max-height:75vh;
-
-    object-fit:contain;
-
-    border-radius:22px;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.35);
-
-    animation:fade .35s ease;
+img{
+    max-width:80vw;
+    max-height:80vh;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
 }
 
 @keyframes fade{
