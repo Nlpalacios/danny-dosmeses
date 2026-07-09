@@ -8,6 +8,7 @@ const frases = [
     "Eres la mejor",
     "La mas bonita",
     "La mas inteligente",
+    "Preciosa",
     "La mas graciosa",
     "Nunca pense tener algo asi, ni mucho menos sentir tanto como lo que siento por ti",
     "Te amooooooo",
@@ -116,8 +117,9 @@ const fotos = [
 ];
 
 const frasesIniciales = [
-    "Te amo muchoooo mucho amor",
-    "Felices dos meses, espero sean muchos mas",
+    "Toca la pantalla",
+    "Te amo mucho mucho amor",
+    "Felices dooos meses, espero sean muchisimos mas",
     "Al amor de mi vida"
 ]
 
@@ -138,6 +140,7 @@ function showItem()
     {
         const item = frasesIniciales[initialIndex];
         content.innerHTML = `<p>${item}</p>`;
+        initialIndex++
         return
     }
 
@@ -170,12 +173,13 @@ function showItem()
 showItem();
 
 document.body.addEventListener("click",()=>{
+
     showItem();
-
     if (!initialPhrases){
-        initialIndex++
-
         if (initialIndex >= frasesIniciales.length)
             initialPhrases = true;
     }
+    
 });
+
+//background:#3310b1;

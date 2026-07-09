@@ -1,6 +1,6 @@
 body{
     margin:0;
-    background:#3310b1;
+    background:linear-gradient(180deg,#d675df,#1d3bb1);
     height:100vh;
     display:flex;
     justify-content:center;
@@ -20,6 +20,15 @@ body{
 img{
     max-width:80vw;
     max-height:80vh;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,.3);
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+    animation:fade .4s ease;
+}
+
+p{
+    font-size:2rem;
+    color:white;
+    text-align:center;
+    line-height:1.6;
+    max-width:800px;
 }
