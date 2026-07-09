@@ -183,3 +183,5 @@ document.body.addEventListener("click",()=>{
 });
 
 //background:#3310b1;
+//<meta name="theme-color" content="#5B8DEF">
+  //  <meta name="theme-color" content="#d675df">
