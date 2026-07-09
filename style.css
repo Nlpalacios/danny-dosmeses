@@ -1,24 +1,25 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    height:100%;
+html, body {
+    /* Forzamos a que el contenedor mida exactamente la pantalla sin desbordar */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita cualquier intento de scroll accidental */
 }
 
 body {
-    /* Solución para navegadores antiguos */
-    min-height: 100vh; 
-    /* Solución real para Safari moderno en iOS */
-    min-height: 100svh; 
+    height: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+
+    /* Pasamos el padding aquí abajo, pero box-sizing evitará que sume tamaño */
+    padding: 25px; 
+    box-sizing: border-box;
+
     background: linear-gradient(180deg, #d675df, #1d3bb1);
+    background-attachment: fixed; /* Mantiene el degradado firme en su lugar */
+
     font-family: "Poppins", sans-serif;
     cursor: pointer;
 }
