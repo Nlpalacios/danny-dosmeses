@@ -8,22 +8,20 @@ html{
     height:100%;
 }
 
-body{
-    min-height:100vh;
+body {
+    /* Solución para navegadores antiguos */
+    min-height: 100vh; 
+    /* Solución real para Safari moderno en iOS */
+    min-height: 100svh; 
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    padding:25px;
-
-    background:linear-gradient(180deg,#d675df,#1d3bb1);
-
-    font-family:"Poppins",sans-serif;
-
-    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background: linear-gradient(180deg, #d675df, #1d3bb1);
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
 }
-
 .container{
     width:100%;
     max-width:900px;
