@@ -62,7 +62,8 @@ body::before{
     width:100%;
     max-width:700px;
     max-height:75vh;
-    object-fit:contain;
+    aspect-ratio:3/4; /* pick a ratio that suits most of your photos */
+    object-fit:cover; /* crops to fill instead of leaving gaps */
     border-radius:20px;
     box-shadow:0 10px 30px rgba(0,0,0,.3);
     animation:fade .35s ease;
