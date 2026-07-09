@@ -10,16 +10,22 @@ body{
 }
 
 body{
+    position:relative;
     display:flex;
     justify-content:center;
     align-items:center;
-
     padding:25px;
-
-    background:linear-gradient(180deg,#d675df,#1d3bb1);
-
     font-family:"Poppins",sans-serif;
     cursor:pointer;
+}
+
+/* background lives on a fixed layer, independent of body height */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    background:linear-gradient(180deg,#d675df,#1d3bb1);
 }
 
 .container{
