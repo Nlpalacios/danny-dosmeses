@@ -118,9 +118,33 @@ const fotos = [
 
 const frasesIniciales = [
     "Toca la pantalla",
-    "Te amo mucho mucho amor",
-    "Felices dooos meses, espero sean muchisimos mas",
-    "Al amor de mi vida"
+    "Hola Amor",
+    "Se que tenemos momentos buenos y momentos malos. Se que es normal en una relacion",
+    "Pero queria que tuvieras esto",
+    "Para recordarte cuanto te amo y que aunque tengamos momentos dificiles, que no olvides lo que siento por ti",
+    "Leelo siempre que quieras acordarte de eso",
+    "O cuando sea tan bobo como para no decirtelo",
+    "Te amo mucho"
+]
+
+const perdon = [
+    "Durante estos meses me has hecho sentir tanto, no porque fueras mi primera novia, sino por reflejar mucho de lo que anhelaba",
+    "Por ser tan especial conmigo y tenerme en cuenta",
+    "Se que hay algunas cosas que para mi son complicadas por nunca haberlo hecho",
+    "Pero creeme que lo intento y que quiero mejorar",
+    "Quiero que te sientas comoda y feliz conmigo",
+    "Se que debemos mejorar mucho, aprender del otro y creeme que estoy dispuesto a ello",
+    "Eres tan dulce conmigo que no se como agradecertelo",
+    "Amo tantas cosas de ti, quisiera que te vieras con mis ojos y supieras todo lo que siento por ti",
+    "El como te veo, tu hermosa sonrisa, tus expresiones, tu manera de reir, tus ojitos",
+    "Que creeme que todo se me soluciona al verte",
+    "Eres una mujer muy especial, siempre te dire que la persona que este contigo es muy afortunada",
+    "Yo soy el mas afortunado",
+    "Espero que por lo que haya hecho me perdones y mas que todo que podamos mejorar con esto",
+    "Espero que te haya dicho todas esas cosas lindas que siento por ti",
+    "Pero si no lo hice, creeme que no hay nada malo en ti, en como te sientas",
+    "Eres la mas especial y la mejor mujer que tengo en mi vida",
+    "Te amo mucho"
 ]
 
 const content = document.getElementById("content");
@@ -145,29 +169,17 @@ function showItem()
     }
 
     let probability = Math.floor(Math.random() * 100);
-
-    if (probability < probabilityText)
-        {
-            const item = frasesMezcladas[indiceFrase];
+    //const item = frasesMezcladas[indiceFrase];
+            const item = perdon[indiceFrase];
             content.innerHTML = `<p>${item}</p>`;
 
             indiceFrase++;
 
-            if (indiceFrase >= frasesMezcladas.length) {
-        frasesMezcladas = [...frases].sort(() => Math.random() - 0.5);
-        indiceFrase = 0;}
-    }
-    else
-    {
-        const foto = fotos[photosIndex];
-        content.innerHTML = `<img src="${foto}">`;
-        photosIndex++;
-
-        if (photosIndex >= fotos.length)
-        {
-                photosIndex = 0;
-        }
-    }
+            if (indiceFrase >= perdon.length) 
+                {
+                    //frasesMezcladas = [...frases].sort(() => Math.random() - 0.5);
+                    indiceFrase = 0;
+                }
 }
 
 showItem();
